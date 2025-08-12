@@ -64,7 +64,7 @@ body {
 }
 
 .certificate-body h2 {
-    font-family: 'Pacifico', cursive;
+/*     font-family: 'Pacifico', cursive; */
     font-size: 2rem;
     margin: 12px 0;
     color: #138808;
