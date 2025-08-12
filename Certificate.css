@@ -1,0 +1,149 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+    background-repeat: no-repeat;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.certificate-container {
+    background: #fff;
+    width: 1920px;
+    margin: 0 auto 30px;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.certificate-border {
+    border: 10px solid #ff9933;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+}
+
+.ashoka-img {
+    width: 80px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.certificate-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #ff9933;
+    margin-bottom: 10px;
+}
+
+.certificate-org {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.certificate-owner {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.certificate-body p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.certificate-body h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    margin: 12px 0;
+    color: #138808;
+}
+
+.certificate-date {
+    font-weight: 600;
+    margin: 20px 0 30px 0;
+    font-size: 1.1rem;
+}
+
+.certificate-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.certificate-footer>div {
+    flex: 1;
+    text-align: center;
+}
+
+.certificate-footer hr {
+    border: 1px solid #333;
+    margin-bottom: 5px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certificate-footer p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+#digital-signature-qrcode {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.controls {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls input[type="text"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #ff9933;
+    flex: 1;
+    max-width: 300px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    background-color: #138808;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #0f7005;
+}
+
+.footer-note {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}

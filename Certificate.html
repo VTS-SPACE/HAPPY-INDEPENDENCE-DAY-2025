@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Certificate of Appreciation</title>
+    <link rel="stylesheet" href="Certificate.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Allura&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Parisienne&family=Mr+Dafoe&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="certificate-container" id="certificate">
+        <div class="certificate-border">
+            <img src="ashoka-chakra.jpg" alt="Ashoka Chakra" class="ashoka-img" />
+
+            <h1 class="certificate-title">Certificate of Appreciation</h1>
+            <p class="certificate-org">Presented by <strong>VANSH TECHNOLOGY SERVICES</strong></p>
+            <p class="certificate-owner">Owner - Vijay Prakash</p>
+
+            <div class="certificate-body">
+                <p>This Certificate of Appreciation is hereby awarded to</p>
+                <h2 id="recipient-name">[Recipient Name]</h2>
+                <p>
+                    In recognition of their exemplary patriotism, dedicated participation, and commendable contribution
+                    to the Independence Day 2025 celebrations.
+                    Their commitment reflects the true spirit of our nation and inspires others to uphold the values of
+                    freedom, unity, and progress.
+                </p>
+                <hr style="width: 60%; margin: 20px auto; border: 1px solid #ff9933;">
+                <p>यह प्रशस्ति पत्र सम्मानित किया जाता है</p>
+                <h2 id="recipient-name-hindi">[प्राप्तकर्ता का नाम]</h2>
+                <p>
+                    उनकी उत्कृष्ट देशभक्ति, समर्पित भागीदारी और स्वतंत्रता दिवस 2025 के समारोहों में सराहनीय योगदान के
+                    लिए।
+                    उनका समर्पण हमारे राष्ट्र की सच्ची भावना को दर्शाता है और दूसरों को स्वतंत्रता, एकता और प्रगति के
+                    मूल्यों को बनाए रखने के लिए प्रेरित करता है।
+                </p>
+                <p>
+                    Presented with gratitude by VANSH TECHNOLOGY SERVICES on this historic occasion of 15 August
+                    2025.<br>
+                    VANSH TECHNOLOGY SERVICES द्वारा 15 अगस्त 2025 के इस ऐतिहासिक अवसर पर आभारपूर्वक प्रस्तुत।
+                </p>
+
+                <!-- Added Sections -->
+                <hr style="width: 60%; margin: 20px auto; border: 1px solid #138808;">
+                <p><strong>Validity Period / वैधता अवधि:</strong> 15-Aug-2025 to 14-Aug-2026 (1 Year)<br>
+                    15 अगस्त 2025 से 14 अगस्त 2026 तक (1 वर्ष)</p>
+
+                <!-- <p><strong>Certificate ID / प्रमाण पत्र संख्या:</strong> <span id="certificate-id">[Auto-Generated
+                        ID]</span></p> -->
+
+                <p><strong>Issuer / जारीकर्ता:</strong> VANSH TECHNOLOGY SERVICES, Kanpur Dehat, Uttar Pradesh,
+                    India<br>
+                    VANSH TECHNOLOGY SERVICES, Kanpur Dehat, Uttar Pradesh, India द्वारा जारी</p>
+            </div>
+
+            <p class="certificate-date" id="certificate-date"></p>
+
+            <div class="certificate-footer">
+                <div>
+                    <hr />
+                    <p>Authorized Signature</p>
+                </div>
+                <div id="digital-signature-qrcode"></div>
+                <!-- <div id="runtime-qrcode"></div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Control Buttons -->
+    <!-- <div class="controls">
+        <input type="text" id="name-input" placeholder="Enter Your Name" />
+        <button onclick="generateCertificate()">Generate Certificate</button>
+        <button onclick="downloadCertificate()">Download PNG</button>
+    </div> -->
+
+    <!-- Footer with India theme -->
+    <footer class="footer-note">
+        <p>🇮🇳 Jai Hind | Designed for Independence Day 2025 | 🇮🇳</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- <script src="Certificate.js"></script> -->
+    <script src="Certificate.js"></script>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get name from localStorage and show in certificate
+            var name = localStorage.getItem("userName") || "";
+            if (name) {
+                document.getElementById("recipient-name").textContent = name;
+                document.getElementById("recipient-name-hindi").textContent = name;
+            }
+            // Set date
+            document.getElementById("certificate-date").textContent = "Date: " + new Date().toLocaleDateString();
+        });
+    </script> -->
+</body>
+
+</html>
