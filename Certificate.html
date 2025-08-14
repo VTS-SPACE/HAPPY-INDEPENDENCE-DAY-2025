@@ -104,6 +104,15 @@
             document.getElementById("certificate-date").textContent = "Date: " + new Date().toLocaleDateString();
         });
     </script> -->
+
+    <script>
+  // Blocks right-click & some keys, but cannot stop devs.
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  document.addEventListener('keydown', e => {
+    const k = e.key.toLowerCase();
+    if ((e.ctrlKey && ['u','s','p','shift','i','j','c'].includes(k)) || e.keyCode===123) e.preventDefault();
+  });
+    </script>
 </body>
 
 </html>
